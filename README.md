@@ -64,6 +64,7 @@ Two scripts ([us_config_squid.sh](https://github.com/drzwang/cen-cross-border-ac
 ```
 [root@ecs-us-squid ~]# VPC_CN_CIDR=192.168.0.0/24 ./us_config_squid.sh
 ```
+**Replace "192.168.0.0/24" with the actual CIDR of *vpc-cn*.**  
 
 ## 4. Configure China ECS instance *ecs-cn-vpn*
 
@@ -79,6 +80,8 @@ Two scripts ([us_config_squid.sh](https://github.com/drzwang/cen-cross-border-ac
 ```
 root@ecs-cn-vpn:~# ECS_US_SQUID_IP=172.16.0.1 ./cn_config_vpn.sh
 ```
+**Replace "172.16.0.1" with the actual private IP of *ecs-us-squid*.**  
+
 The following files will be generated under /root/vpn-instruction:
 - **vpn-instructions.txt:** General client device configuration instructions.
 - **vpn-ca-cert.crt:** VPN Server CA Certificate. 

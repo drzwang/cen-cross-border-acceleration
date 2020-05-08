@@ -41,7 +41,7 @@ add-apt-repository multiverse
 apt-get -o Acquire::ForceIPv4=true --with-new-pkgs upgrade -y
 apt autoremove -y
 
-apt-get -o Acquire::ForceIPv4=true install -y language-pack-en strongswan strongswan-pki libstrongswan-standard-plugins strongswan-libcharon libcharon-standard-plugins libcharon-extra-plugins moreutils iptables-persistent unattended-upgrades dnsutils uuid-runtime
+apt-get -o Acquire::ForceIPv4=true install -y language-pack-en strongswan strongswan-pki libstrongswan-standard-plugins strongswan-libcharon libcharon-standard-plugins libcharon-extra-plugins moreutils iptables-persistent unattended-upgrades dnsutils uuid uuid-runtime
 
 echo
 echo "--- Configuration: VPN settings ---"
